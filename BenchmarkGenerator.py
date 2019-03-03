@@ -8,6 +8,7 @@ Created on Wed Feb 20 10:14:16 2019
 
 import numpy as np
 import os
+import argparse
 import matplotlib.pyplot as plt
 
 import AStarSearchSolver as solver
@@ -83,14 +84,28 @@ def edge_traffic_stat(edge_traffic,gridSize):
             continue
     return via_capacity, hoz_capacity, vet_capacity
 
+def parse_arguments():
+    parser = argparse.ArgumentParser('Benchmark Generator Parser')
+    parser.add_argument('--benchNumber',type=int,\
+        dest='benchmarkNumber',default=20)
+    parser.add_argument('--gridSize',type=int,dest='gridSize',default=16)
+    parser.add_argument('--netNum',type=int,dest='netNum',default=5)
+    parser.add_argument('--capacity',type=int,dest='cap',default=4)
+    parser.add_argument('--maxPinNum',type=int,dest='maxPinNum',default=5)
+    return parser.parse_args()
 
 if __name__ == "__main__":
-    benchmarkNumber = 2000
+    args = parse_arguments()
+    benchmarkNumber = args.benchmarkNumber
+
+    # benchmarkNumber = 20
     savepath = 'benchmark/'  # specify path to save benchmarks
     os.makedirs(savepath)
     os.chdir(savepath)
-    
-    gridSize = 32; netNum = 10; vCap = 4; hCap = 4; maxPinNum = 10
+     
+    gridSize = args.gridSize; netNum = args.netNum
+    vCap = args.cap; hCap = args.cap; maxPinNum = args.maxPinNum
+
     for i in range(benchmarkNumber):
         benchmark_name = "test_benchmark_{num}.gr".format(num=i+1)
         generator(benchmark_name,gridSize,netNum,vCap,hCap,maxPinNum,savepath)
