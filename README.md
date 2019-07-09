@@ -27,6 +27,8 @@ python Main.py --benchNumber 10 --gridSize 8 --netNum 50 --capacity 5 --maxPinNu
 - capacityPlot_A*: capacity plot of edge utilizations for problems in "benchmark" folder in different directions (horizontal, vertical) for individual problems (with number) and averaged over all problems (without number); edge utilization count plot
 <p align="left">
 <img src="Images/edgePlotwithCapacity5number8.png" alt="drawing" width="400">
+<p align="center">
+<img src="Images/edgePlotwithCapacity5number8.png" alt="drawing" width="400">
 </p>
 - capacityPlot_A*_reduced:  capacity plot of edge utilizations for problems in "benchmark_reduced" folder in different directions (horizontal, vertical) for individual problems (with number) and averaged over all problems (without number); edge utilization count plot
 - solutionsA*: solution files for problems in "benchmark" folder given by A*Search router together with plot for solutions
