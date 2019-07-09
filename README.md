@@ -39,7 +39,7 @@ python Main.py --benchNumber 10 --gridSize 8 --netNum 50 --capacity 5 --maxPinNu
 #### 6. Warning: 
 when executed again, previously generated problems, solutions and plots will be removed.
 
-Appendix: capacity plot of a 32*32 size problem
+#### Appendix: capacity plot of a 32*32 size problem
 <p align="center">
 <img src="Images/CapPlot32.png" alt="drawing" width="800">
 </p>
