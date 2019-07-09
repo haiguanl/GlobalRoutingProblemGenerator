@@ -5,7 +5,6 @@ Congestion are described by heatmaps representing traffic on edges of different 
 <br />There are two types of generated problems: the first type problems only have speficed global capacity (stored in folder "**benchmark**"); the second type problems have both spefified global capacity and reduced capacity (stored in folder "**benchmark_reduced**"). The reduced capacity blocked edges in descending orders of edge utilization based on A\* solution .i.e. blocking edges with highest edge utilization in A\* solution.
 
 <br /> The generated problems sets will faciliate development of machine-learaning-based global routing algorithms that relies on large amount of training datasets to make it generalizable.
-
 <br /> Some details of the code are as follows:
 #### 1. Python Version: Python3.6
 #### 2. Packages: 
