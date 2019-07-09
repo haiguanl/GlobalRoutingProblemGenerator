@@ -33,7 +33,6 @@ when executed again, previously generated problems, solutions and plots will be 
 
 
 #### Images showing edge traffic in 300-by-300 benchmarks.
-![image showing horizontal capacity](https://github.com/haiguanl/BenchmarkGenerator/blob/master/CapacityPlot/hozCapacity.jpg)
-![image showing vertical capacity](https://github.com/haiguanl/BenchmarkGenerator/blob/master/CapacityPlot/vetCapacity.jpg)
-![image showing via capacity](https://github.com/haiguanl/BenchmarkGenerator/blob/master/CapacityPlot/viaCapacity.jpg)
+![image showing horizontal capacity](Images/edgePlotwithCapacity5number8.png)
+
 
