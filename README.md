@@ -33,6 +33,6 @@ when executed again, previously generated problems, solutions and plots will be 
 
 
 #### Images showing edge traffic in 300-by-300 benchmarks.
-![image showing horizontal capacity](Images/edgePlotwithCapacity5number8.png)(./pic/pic1_50.png =100x20)
+![image showing horizontal capacity](Images/edgePlotwithCapacity5number8.png =100x20)
 
 
