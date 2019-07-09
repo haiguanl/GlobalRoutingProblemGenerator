@@ -28,8 +28,12 @@ python Main.py --benchNumber 10 --gridSize 8 --netNum 50 --capacity 5 --maxPinNu
 <p align="center">
 <img src="Images/CapPlot.png" alt="drawing" width="800">
 </p>
+
 - capacityPlot_A*_reduced:  capacity plot of edge utilizations for problems in "benchmark_reduced" folder in different directions (horizontal, vertical) for individual problems (with number) and averaged over all problems (without number); edge utilization count plot
-- solutionsA*: solution files for problems in "benchmark" folder given by A*Search router together with plot for solutions
+- solutionsA*: solution files for problems in "benchmark" folder given by A*Search router together with plot for solutions<p align="center">
+<img src="Images/SolPlot.png" alt="drawing" width="800">
+</p>
+
 - solutionsA*_reduced: solution files for problems in "benchmark_reduced" folder given by A*Search router together with plot for solutions
 #### 6. Warning: 
 when executed again, previously generated problems, solutions and plots will be removed.
