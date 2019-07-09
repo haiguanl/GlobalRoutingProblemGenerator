@@ -5,9 +5,9 @@ Heatmaps representing traffic on edges of different directions (horizontal, vert
 
 #### 1. Python Version: Python3.6
 #### 2. Packages: os, operator, matplotlib, numpy, argparse, collections, spicy, sys, mpl_toolkits. To install them:
-···
-$ pip install <package_name>.
-···
+```
+pip install <package_name>.
+```
 You might need to install some extra packages in your environment to run the generator.
 
 #### 3. Parameters to be specified includes: number of generated problems (benchNumber),gridSize, number of nets in each problem (netNum), global capacity (capacity), maximum number of pins for each net (maxPinNum), reducedCapNum (number of edges with reduced capacity). In existing version of code, reduced capacity edges are set with zero capacity, i.e. fully blocked.
