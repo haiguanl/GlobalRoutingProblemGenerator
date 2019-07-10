@@ -8,7 +8,7 @@ Congestion are described by heatmaps representing traffic on edges of different 
 #### 2. Packages: 
 os, operator, matplotlib, numpy, argparse, collections, spicy, sys, mpl_toolkits. To install them:
 ```
-pip install <package_name>.
+pip install <package_name>
 ```
 You might need to install some extra packages in your environment to run the generator.
 
