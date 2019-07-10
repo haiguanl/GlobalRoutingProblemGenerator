@@ -1,18 +1,26 @@
 # Global Routing Problem Generator V1.0
 This repository functions as an automatic problem generator for global routing problems. Benchmarks (or problem sets)  are generated and then solved with A\*Search so that a baseline solution is provided and a rough estimate of congestion can be obtained.
-Congestion are described by heatmaps representing traffic on edges of different directions (horizontal, vertical,via) and edge utilization count plot.
-<br />There are two types of generated problems: the first type problems only have speficed global capacity (stored in folder "**benchmark**"); the second type problems have both spefified global capacity and reduced capacity (stored in folder "**benchmark_reduced**"). The reduced capacity blocked edges in descending orders of edge utilization based on A\* solution .i.e. blocking edges with highest edge utilization in A\* solution.
-<br /> The generated problems sets will faciliate development of machine-learaning-based global routing algorithms that relies on large amount of training datasets to make it generalizable.
+Congestion is described by heatmaps representing traffic on edges of different directions (horizontal, vertical,via) and edge utilization count plot.
+<br />There are two types of generated problems: the first type problems only have specified global capacity (stored in folder "**benchmark**"); the second type problems have both specified global capacity and reduced capacity (stored in folder "**benchmark_reduced**"). The reduced capacity blocked edges in descending orders of edge utilization based on A\* solution .i.e. blocking edges with highest edge utilization in A\* solution.
+<br /> The generated problem sets will faciliate development of machine-learning-based global routing algorithms that relies on large amount of training datasets to make it generalizable.
 <br /> Some details of the code are as follows:
 #### 1. Python Version: Python3.6
 #### 2. Packages: 
-os, operator, matplotlib, numpy, argparse, collections, spicy, sys, mpl_toolkits. To install them:
+os, operator, matplotlib, numpy, argparse, collections, scipy, sys, mpl_toolkits. To install them:
 ```
 pip install <package_name>
 ```
 You might need to install some extra packages in your environment to run the generator.
 
-#### 3. Parameters to be specified includes: 
+Alternatively, to setup your environment, use the conda environment specified in environment.yml by simply doing the following with a recent version of conda in Linux/Bash (https://conda.io/projects/conda/en/latest/user-guide/install/index.html):
+```
+cd GlobalRoutingProblemGenerator
+conda env create
+source activate GlobalRoutingProblemGenerator
+```
+
+
+#### 3. Parameters to be specified include: 
 - number of generated problems (benchNumber)
 - gridSize, number of nets in each problem (netNum) 
 - global capacity (capacity), maximum number of pins for each net (maxPinNum)

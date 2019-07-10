@@ -1,0 +1,13 @@
+name: GlobalRoutingProblemGenerator
+
+dependencies:
+  - python=3.6
+  - matplotlib
+  - numpy
+  - scipy
+  - basemap
+  - pandas
+  - pillow
+
+
+  
